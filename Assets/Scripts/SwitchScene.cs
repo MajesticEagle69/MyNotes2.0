@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
-    public ToDoData toDoData;
-
     public void SceneChangeCalendar()
     {
-        SceneManager.LoadScene("CalendarScene");   
+        //SceneManager.LoadScene("CalendarScene");   
     }
 
     public void SceneChangeToDo()
@@ -20,13 +18,11 @@ public class SwitchScene : MonoBehaviour
 
     public void SceneChangeNote()
     {
-        SceneManager.LoadScene("NotesScene");
+        //SceneManager.LoadScene("NotesScene");
     }
 
     public void SceneChangeMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        
-        SaveSystem.Save(toDoData.data);
     }
 }
