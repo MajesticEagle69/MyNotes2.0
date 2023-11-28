@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
+    public ToDoData toDoData;
+
     public void SceneChangeCalendar()
     {
         SceneManager.LoadScene("CalendarScene");   
@@ -24,5 +26,7 @@ public class SwitchScene : MonoBehaviour
     public void SceneChangeMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        
+        SaveSystem.Save(toDoData.data);
     }
 }

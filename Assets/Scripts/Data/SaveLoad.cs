@@ -18,4 +18,16 @@ public class SaveLoad : MonoBehaviour
 
         toDoData.LoadData();
     }
+
+    public void Awake()
+    {
+        toDoData.data = SaveSystem.Load();
+
+        toDoData.LoadData();
+    }
+
+    public void OnApplicationQuit()
+    {
+        SaveSystem.Save(toDoData.data);
+    }
 }
