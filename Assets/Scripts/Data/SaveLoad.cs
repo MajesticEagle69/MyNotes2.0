@@ -9,14 +9,7 @@ public class SaveLoad : MonoBehaviour
 
     private void Awake()
     {
-        toDoData.data = SaveSystem.Load();
-
-        toDoData.LoadData();
-    }
-
-    private void Update()
-    {
-        SaveSystem.Save(toDoData.data);
+        LoadData();
     }
 
     public void SaveData()

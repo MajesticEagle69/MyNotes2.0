@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Notes : MonoBehaviour
 {
+    public ToDoData toDoData;
+
     private TMP_InputField Note1Field;
     private Toggle Note1toggle;
 
@@ -36,6 +38,8 @@ public class Notes : MonoBehaviour
     public void Done()
     {
         Note1Done = true;
+
+        toDoData.changeNote();
 
         if (Note1Done == true)
         {
