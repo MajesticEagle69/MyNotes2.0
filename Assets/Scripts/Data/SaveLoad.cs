@@ -15,6 +15,7 @@ public class SaveLoad : MonoBehaviour
     public void SaveData()
     {
         SaveSystem.Save(toDoData.data);
+        Debug.Log("save");
     }
 
     public void LoadData()
