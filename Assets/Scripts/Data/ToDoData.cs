@@ -14,7 +14,6 @@ public class ToDoData : MonoBehaviour
     [SerializeField] public TMP_InputField note4;
     [SerializeField] public TMP_InputField note5;
     [SerializeField] public TMP_InputField note6;
-    [SerializeField] public TMP_InputField note7;
 
     public void changeNote()
     {
@@ -24,7 +23,6 @@ public class ToDoData : MonoBehaviour
         data.note4Data = note4.text;
         data.note5Data = note5.text;
         data.note6Data = note6.text;
-        data.note7Data = note7.text;
     }
 
     public void LoadData()
@@ -35,6 +33,5 @@ public class ToDoData : MonoBehaviour
         note4.text = data.note4Data;
         note5.text = data.note5Data;
         note6.text = data.note6Data;
-        note7.text = data.note7Data;
     }
 }

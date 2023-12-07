@@ -60,15 +60,6 @@ public class MoveText : MonoBehaviour
                 toDoData.note6.text = note5;
                 toDoData.changeNote();
                 break;
-
-            case "arrow6":
-                note6 = toDoData.note6.text;
-                string note7 = toDoData.note7.text;
-
-                toDoData.note6.text = note7;
-                toDoData.note7.text = note6;
-                toDoData.changeNote();
-                break;
         }
     }
 }
