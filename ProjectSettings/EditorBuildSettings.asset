@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/NotesScene.unity
     guid: fed39a4523632184fb59ce9c96d22a5b
   - enabled: 1
-    path: Assets/Scenes/CalendarScene.unity
+    path: Assets/Scenes/PlannerScene.unity
     guid: 7e4ce0fb148217245a733567c169db16
   m_configObjects: {}

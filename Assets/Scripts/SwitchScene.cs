@@ -8,7 +8,7 @@ public class SwitchScene : MonoBehaviour
 {
     public void SceneChangeCalendar()
     {
-        //SceneManager.LoadScene("CalendarScene");   
+        SceneManager.LoadScene("PlannerScene");   
     }
 
     public void SceneChangeToDo()
